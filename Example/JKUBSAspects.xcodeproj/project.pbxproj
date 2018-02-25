@@ -64,9 +64,9 @@
 		B35C48AFD137E615D1950A26 /* Pods-JKUBSAspects_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUBSAspects_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUBSAspects_Example/Pods-JKUBSAspects_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B73B68799C9E4EDE8D189546 /* Pods-JKUBSAspects_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUBSAspects_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUBSAspects_Example/Pods-JKUBSAspects_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BF867538AB78A10A85D54D82 /* Pods_JKUBSAspects_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKUBSAspects_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4752DA768DA55E932D3CA7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E70BDA0C06E88FCB7927C958 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F221600EA1C6FC299F25985C /* JKUBSAspects.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKUBSAspects.podspec; path = ../JKUBSAspects.podspec; sourceTree = "<group>"; };
+		D4752DA768DA55E932D3CA7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E70BDA0C06E88FCB7927C958 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F221600EA1C6FC299F25985C /* JKUBSAspects.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKUBSAspects.podspec; path = ../JKUBSAspects.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

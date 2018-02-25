@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKUBSAspects'
-  s.version          = '0.1.0'
-  s.summary          = 'https://github.com/xindizhiyin2014/JKUBSAspects.'
+  s.version          = '0.1.1'
+  s.summary          = 'this is a tool to swizzle method'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-https://github.com/xindizhiyin2014/JKUBSAspects
+this is a tool to swizzle method it will update with the need
                        DESC
 
   s.homepage         = 'https://github.com/xindizhiyin2014/JKUBSAspects'
