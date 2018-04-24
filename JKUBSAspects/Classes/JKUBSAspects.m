@@ -221,11 +221,44 @@ static BOOL aspect_isCompatibleBlockSignature(NSMethodSignature *blockSignature,
     }
 
     if (!signaturesMatch) {
+        if ([NSObject validateMehodCanRunWithTarget:object selectorStr:NSStringFromSelector(selector)]) {//类方法的判断
+            return YES;
+        }
         NSString *description = [NSString stringWithFormat:@"Blog signature %@ doesn't match %@.", blockSignature, methodSignature];
         JKUBSAspectError(JKUBSAspectErrorIncompatibleBlockSignature, description);
         return NO;
     }
     return YES;
+}
+
+//判断方法能否响应
++ (BOOL)validateMehodCanRunWithTarget:(id)target selectorStr:(NSString *)selectorStr{
+    unsigned int methodCount =0;
+    Method* methodList = class_copyMethodList([target class],&methodCount);
+    NSMutableArray *methodsArray = [NSMutableArray arrayWithCapacity:methodCount];
+    
+    for(int i=0;i<methodCount;i++)
+    {
+        Method temp = methodList[i];
+        const char* name_s =sel_getName(method_getName(temp));
+        int arguments = method_getNumberOfArguments(temp);
+        const char* encoding =method_getTypeEncoding(temp);
+        NSLog(@"方法名：%@,参数个数：%d,编码方式：%@",[NSString stringWithUTF8String:name_s],
+              arguments,
+              [NSString stringWithUTF8String:encoding]);
+        [methodsArray addObject:[NSString stringWithUTF8String:name_s]];
+    }
+    free(methodList);
+    for (NSString *methodStr   in [methodsArray copy]) {
+        if ([methodStr isEqualToString:selectorStr]) {
+            
+            return YES;
+            break;
+        }
+    }
+    
+    return NO;
+    
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
