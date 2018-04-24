@@ -241,8 +241,6 @@ static BOOL aspect_isCompatibleBlockSignature(NSMethodSignature *blockSignature,
     {
         Method temp = methodList[i];
         const char* name_s =sel_getName(method_getName(temp));
-        int arguments = method_getNumberOfArguments(temp);
-        const char* encoding =method_getTypeEncoding(temp);
         [methodsArray addObject:[NSString stringWithUTF8String:name_s]];
     }
     free(methodList);
