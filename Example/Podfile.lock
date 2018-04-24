@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JKUBSAspects (0.1.0)
+  - JKUBSAspects (0.1.2)
   - Kiwi (2.4.0)
 
 DEPENDENCIES:
@@ -12,15 +12,20 @@ DEPENDENCIES:
   - JKUBSAspects (from `../`)
   - Kiwi
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+    - Kiwi
+
 EXTERNAL SOURCES:
   JKUBSAspects:
     :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JKUBSAspects: e5e8e90cc7cca71d88c87db1c428f9bd11f2a234
+  JKUBSAspects: d262835b97af157ec1686afb32d8f78bd299f05f
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
 
 PODFILE CHECKSUM: 67be7aa5f4643755671872339465ab7b3edf1b1e
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0
