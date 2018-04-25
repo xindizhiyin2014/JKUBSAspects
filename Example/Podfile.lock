@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JKUBSAspects (0.1.2)
+  - JKUBSAspects (0.1.3)
   - Kiwi (2.4.0)
 
 DEPENDENCIES:
@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JKUBSAspects: d262835b97af157ec1686afb32d8f78bd299f05f
+  JKUBSAspects: 0fd319c14cec418c97d083422aebe58ae590295f
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
 
 PODFILE CHECKSUM: 67be7aa5f4643755671872339465ab7b3edf1b1e
